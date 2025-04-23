@@ -27,7 +27,7 @@ class TextForm extends StatelessWidget {
       ),
       style: TextStyle(
         fontSize: 16,
-        color: AppColor.hintColor,
+        color: AppColor.text,
         fontWeight: FontWeight.w300,
         fontFamily: 'Comic Neue',
       ),

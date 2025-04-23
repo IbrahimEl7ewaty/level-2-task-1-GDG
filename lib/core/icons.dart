@@ -10,4 +10,11 @@ abstract class AppIcons {
   static const String account = '${pathLink}account.svg';
   static const String camera = '${pathLink}camera.svg';
   static const String edit = '${pathLink}edit.svg';
+  static const String search = '${pathLink}search.svg';
+  static const String plus = '${pathLink}plus.svg';
+  static const String noRead = '${pathLink}noRead.svg';
+  static const String read = '${pathLink}Read.svg';
+  static const String chat = '${pathLink}chat.svg';
+  static const String frindes = '${pathLink}frindes.svg';
+  static const String stor = '${pathLink}stor.svg';
 }
