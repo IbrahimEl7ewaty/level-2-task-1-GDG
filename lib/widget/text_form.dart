@@ -16,13 +16,17 @@ class TextForm extends StatelessWidget {
           padding: const EdgeInsets.all(18.0),
           child: SvgPicture.asset(prefixIcon),
         ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15.0),
-          borderSide: BorderSide(color: AppColor.purple),
-        ),
+        // border: OutlineInputBorder(
+        //   borderRadius: BorderRadius.circular(15.0),
+        //   borderSide: BorderSide(color: AppColor.purple, width: 2.0),
+        // ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15.0),
           borderSide: BorderSide(color: AppColor.purple, width: 2.0),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15.0),
+          borderSide: BorderSide(color: AppColor.purple, width: 1.0),
         ),
       ),
       style: TextStyle(

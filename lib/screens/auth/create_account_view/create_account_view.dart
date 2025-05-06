@@ -89,7 +89,7 @@ class CreateAccountView extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>  HomeView()),
+                    MaterialPageRoute(builder: (context) => HomeView()),
                   );
                 },
               ),
@@ -108,10 +108,10 @@ class CreateAccountView extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        ContainerDefult(iconPath: AppIcons.google),
-                        ContainerDefult(iconPath: AppIcons.google),
-                        ContainerDefult(iconPath: AppIcons.iphone),
-                        ContainerDefult(iconPath: AppIcons.twitter),
+                        ContainerDefult(iconPathSVG: AppIcons.google),
+                        ContainerDefult(iconPathSVG: AppIcons.facebook),
+                        ContainerDefult(iconPathSVG: AppIcons.iphone),
+                        ContainerDefult(iconPathSVG: AppIcons.twitter),
                       ],
                     ),
                     SizedBox(height: 20),

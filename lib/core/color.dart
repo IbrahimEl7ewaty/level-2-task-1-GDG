@@ -9,8 +9,10 @@ abstract class AppColor {
   static const Color colorSearch = Color.fromARGB(0, 157, 157, 158);
   static const Color hintBlack = Color(0xff00000080);
   static const Color bottomBarL = Color(0xFFA6A6AA);
-
+  static const Color lightgray = Color.fromARGB(255, 233, 241, 239);
   static const Color bottomBarR = Color(0xFFFFFFFF);
+  static const Color shadowColor = Color.fromRGBO(178, 204, 255, 0.7);
+  static const Color purpleWite = Color(0xFFDEC9FF);
 
-  // لون أبيض فاتح على اليسار
+
 }

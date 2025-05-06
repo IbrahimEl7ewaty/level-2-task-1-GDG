@@ -3,9 +3,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:level_1_task_gdg/core/color.dart';
 
 class ContainerDefult extends StatelessWidget {
-  final String iconPath;
+  final String iconPathSVG;
   final bool? icons;
-  const ContainerDefult({super.key, required this.iconPath, this.icons});
+  const ContainerDefult({super.key, required this.iconPathSVG, this.icons,  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,17 +26,22 @@ class ContainerDefult extends StatelessWidget {
         ],
       ),
 
-      child: Center(child: SvgPicture.asset(iconPath)),
-
+      child: Center(
+        child:
+            iconPathSVG.toString().split('.').last == 'svg'
+                ? SvgPicture.asset(iconPathSVG)
+                : Image.asset(iconPathSVG),
+      ),
     );
   }
 }
 
 
-class ContainerDefult1 extends StatelessWidget {
+
+class ContainerDefultpng extends StatelessWidget {
   final String iconPath;
   final bool? icons;
-  const ContainerDefult1({super.key, required this.iconPath, this.icons});
+  const ContainerDefultpng({super.key, required this.iconPath, this.icons});
 
   @override
   Widget build(BuildContext context) {
@@ -58,8 +63,6 @@ class ContainerDefult1 extends StatelessWidget {
       ),
 
       child: Center(child: Image.asset(iconPath)),
-
     );
   }
 }
-
