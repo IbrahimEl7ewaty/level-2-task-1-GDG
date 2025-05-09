@@ -1,10 +1,15 @@
+import 'dart:developer';
+
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:level_1_task_gdg/screens/auth/login_view/login_view.dart';
 import 'package:level_1_task_gdg/core/color.dart';
 
-void main() {
+void main()  {
   runApp(const MyApp());
+ 
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

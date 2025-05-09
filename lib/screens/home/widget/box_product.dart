@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:level_1_task_gdg/core/color.dart';
-import 'package:level_1_task_gdg/core/images.dart';
+import 'package:level_1_task_gdg/screens/home/data/products_model.dart';
 import 'package:level_1_task_gdg/widget/text_comic_neue.dart';
 
 class BoxProduct extends StatelessWidget {
-  const BoxProduct({super.key});
-
+  const BoxProduct({super.key, required this.product});
+  final ProductsModel product;
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       width: MediaQuery.of(context).size.width * 164 / 375,
       height: 200,
       decoration: BoxDecoration(
@@ -27,21 +27,26 @@ class BoxProduct extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 156 / 375,
                 height: 96,
                 decoration: BoxDecoration(
-                  color: AppColor.purpleWite,
+                  color: AppColor.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
-                child: Center(child: Image.asset(AppImages.headPhones)),
+                child: Center(
+                  child: Image.network(
+                    product.image,
+                    ),
+                ),
               ),
               SizedBox(height: 4),
               TextComicNeue(
-                text: '799 LE',
+                text: '${product.price} LE',
                 size: 12,
                 fontWeight: FontWeight.w500,
                 color: AppColor.text,
               ),
               SizedBox(height: 4),
               TextComicNeue(
-                text: 'Black JBL Airbods',
+                text: product.title,
+                
                 size: 12,
                 fontWeight: FontWeight.w500,
                 color: AppColor.text,

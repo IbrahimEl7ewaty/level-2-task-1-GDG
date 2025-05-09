@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:level_1_task_gdg/core/color.dart';
 import 'package:level_1_task_gdg/core/icons.dart';
+import 'package:level_1_task_gdg/screens/home/api_test.dart';
 
 class BoxUser extends StatelessWidget {
   final String iconPath;
@@ -10,7 +11,12 @@ class BoxUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const ApiTst()),
+        );
+      },
       child: Container(
         margin: const EdgeInsets.only(right: 15),
         width: 40,
