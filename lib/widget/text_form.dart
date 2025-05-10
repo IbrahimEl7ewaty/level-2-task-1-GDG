@@ -5,11 +5,14 @@ import 'package:level_1_task_gdg/core/color.dart';
 class TextForm extends StatelessWidget {
   final String prefixIcon;
   final String hintText;
-  const TextForm({super.key, required this.hintText, required this.prefixIcon});
+  final TextEditingController controller;
+  const TextForm({super.key, required this.hintText, required this.prefixIcon, required this.controller});
 
   @override
   Widget build(BuildContext context) {
+    
     return TextFormField(
+      controller:controller ,
       decoration: InputDecoration(
         hintText: hintText,
         prefixIcon: Padding(

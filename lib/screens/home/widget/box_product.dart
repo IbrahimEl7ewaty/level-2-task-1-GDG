@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:level_1_task_gdg/core/color.dart';
-import 'package:level_1_task_gdg/screens/home/data/products_model.dart';
+import 'package:level_1_task_gdg/screens/home/data/model/products_model.dart';
 import 'package:level_1_task_gdg/widget/text_comic_neue.dart';
 
 class BoxProduct extends StatelessWidget {
